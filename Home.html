@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصقر - الصفحة الرئيسية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Alsakr.css">
+    <style>
+        .navbar {
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-hidden {
+            transform: translateY(-100%);
+        }
+
+        .links {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .city-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 2px solid #ddd;
+            padding-bottom: 60px; /* لتوفير مساحة للنص في الأسفل */
+        }
+
+        .city-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .city-card h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.7);
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background-color: #f8f9fa; /* تغيير لون الخلفية عند التمرير */
+        }
+
+        .city-card:hover img {
+            transform: scale(1.1); /* تكبير الصورة عند التمرير */
+        }
+
+        .city-card:hover h3 {
+            background-color: #007bff;
+            color: #fff; 
+        }
+
+        .explore-section h1,
+        .explore-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        /* .explore-section h1:hover,
+        .explore-section h2:hover {
+            color: #007bff;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">الصقر</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            فروعنا
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Riyadh.html"> الرياض</a></li>
+                            <li><a class="dropdown-item" href="Jeddah.html">جدة</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الصقر</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Centered Explore Section -->
+        <div class="explore-section">
+            <h1>اكتشف</h1>
+            <h2>الرياض &nbsp; | &nbsp; جدة</h2>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Riyadh Section -->
+            <div class="col-md-6">
+                <div class="city-card">
+                    <a href="Riyadh.html" target="_blank" class="links">
+                        <img src="./Images/Saudi-Arabia.jpg" alt="Riyadh">
+                        <h3>الرياض</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Jeddah Section -->
+            <div class="col-md-6">
+                <div class="city-card">
+                    <a href="Jeddah.html" target="_blank" class="links">
+                        <img src="./Images/Jeddah.jpg" alt="Jeddah">
+                        <h3>جدة</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle navbar hide/show on scroll
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // Scroll down
+                navbar.classList.add('navbar-hidden');
+            } else {
+                // Scroll up
+                navbar.classList.remove('navbar-hidden');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
