@@ -1,122 +1,257 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>الصقر - الصفحة الرئيسية</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./Alsakr.css">
-    <style>
-        .navbar {
-            transition: transform 0.3s ease;
-        }
-
-        .navbar-hidden {
-            transform: translateY(-100%);
-        }
-
-        .links {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-        }
-
-        .city-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-            border: 2px solid #ddd;
-            padding-bottom: 60px; /* لتوفير مساحة للنص في الأسفل */
-        }
-
-        .city-card img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .city-card h3 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.7);
-            color: #000000;
-            text-align: center;
-            padding: 10px;
-            margin: 0;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .city-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            background-color: #f8f9fa; /* تغيير لون الخلفية عند التمرير */
-        }
-
-        .city-card:hover img {
-            transform: scale(1.1); /* تكبير الصورة عند التمرير */
-        }
-
-        .city-card:hover h3 {
-            background-color: #007bff;
-            color: #fff; 
-        }
-
-        .explore-section h1,
-        .explore-section h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            transition: color 0.3s ease;
-        }
-
-        /* .explore-section h1:hover,
-        .explore-section h2:hover {
-            color: #007bff;
-        } */
-    </style>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="Home.html">الصقر</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Home.html">الصفحة الرئيسية</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            فروعنا
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Riyadh.html"> الرياض</a></li>
-                            <li><a class="dropdown-item" href="Jeddah.html">جدة</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">عن الصقر</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">مصنع الصقر العربي</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                فروعنا
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Riyadh.html">الرياض</a></li>
+                <li><a class="dropdown-item" href="Jeddah.html">جدة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">مشاريعنا</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <!-- Main Content -->
+    <div class="h-50">
+      <img src="./Images/img13.jpg" class="img-fluid" alt="..." />
+    </div>
+    <section id="about" class="about-section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12 col-12 order-lg-2">
+            <div class="about-img">
+              <img src="./Images/img226.jpg" alt="" class="img-fluid mt-5" />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12 pe-lg-5 mt-md-5 order-lg-1">
+            <div class="about-text">
+              <h2>مصنع الصقر العربي للزجاج</h2>
+              <br />
+              <h4>نبذه عن الشركة :</h4>
+              <p>
+                شركة الصقر العربي للزجاج هي من افضل الشركات لتصنيع الزجاج ,
+                وتنتج الزجاج الشفاف الشديد الوضوح من انواع المصقول والزجاج
+                المعماري والمطلي وغيرها من انواع الزجاج المتعدده وكذلك جميع
+                اعمال الألمنيوم من شبابيك وابواب وغيرها واعمال الأستركتشر
+                والأستبل من درابزينات وابواب حديديه وغيرها وكذلك جميع انواع
+                المرايات والديكوراتا الداخليه من بديل الخشب والرخام و ورق الحائط
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img src="./Images/img474.jpg" alt="" class="img-fluid mt-5" />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12 pe-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2>رؤيتنا :</h2>
+              <p>
+                أن نكون رواد في انتشار خدمات الزجاج والمرايا والألمنيوم في السوق
+                السعودي ونهدف الى كسب ثقة العملاء و زيادة معدل رضائهم في علاقه
+                طويلة الأجل كشركاء في العمل وشركاء في النجاح
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section-padding mt-5">
+        <div class="container">
+            <h2 class="text-center mb-5">مشاريعنا</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <h4>مشروع الزجاج المعماري لمبنى اداري - شارع حراء</h4>
+                        <p>نقوم بتوريد وتركيب الزجاج المعماري عالي الجودة لمشاريع كبرى في الرياض و جده. نقدم حلولاً مبتكرة تتوافق مع متطلبات التصميم العصري.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <h4>مشروع القبه الزجاجيه في ابحر الشماليه</h4>
+                        <p>أحد أهم مشاريعنا التي نتميز فيها بتقديم مرايا ذات جودة فائقة لتزيين الفلل والمباني الحديثة مع توفير تصاميم فريدة تناسب جميع الأذواق.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <h4> مشروع الألمنيوم والأستركتشر فيلا</h4>
+                        <p>نحن متواجدون في السوق السعودي لتقديم حلول الألمنيوم والأستركتشر في الأبراج والمباني التجارية، مع التركيز على المتانة والتصميم الحديث.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="projects.html" class="btn btn-primary">للمزيد من المشاريع</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">رسالتنا :</h5>
+              <p class="card-text">
+                تقديم منتج عالي الجوده يلبي احتياجات الفنيين والعملاء بجودة وسعر
+                منافس وتقديم الجديد والمطور في السوق
+              </p>
+            </div>
+            <img src="./Images/Riyadh.jpg" class="card-img-bottom" alt="..." />
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">رسالتنا :</h5>
+              <p class="card-text">
+                تقديم منتج عالي الجوده يلبي احتياجات الفنيين والعملاء بجودة وسعر
+                منافس وتقديم الجديد والمطور في السوق
+              </p>
+            </div>
+            <img src="./Images/Riyadh.jpg" class="card-img-bottom" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mt-4 me-4 ms-4">
+      <div class="card-body">
+        <h2>نبذه عن الشركة :</h2>
+        <div>
+          شركة الصقر العربي للزجاج هي من افضل الشركات لتصنيع الزجاج , وتنتج
+          الزجاج الشفاف الشديد الوضوح من انواع المصقول والزجاج المعماري والمطلي
+          وغيرها من انواع الزجاج المتعدده وكذلك جميع اعمال الألمنيوم من شبابيك
+          وابواب وغيرها واعمال الأستركتشر والأستبل من درابزينات وابواب حديديه
+          وغيرها وكذلك جميع انواع المرايات والديكوراتا الداخليه من بديل الخشب
+          والرخام و ورق الحائط.
+        </div>
+      </div>
+    </div> -->
+
+    <div
+      class="container d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="card w-50">
+        <div class="card-body text-center">
+          <h2>مصنعنا المتطور في مدينة الرياض</h2>
+          <div>
+            يلبي انتاجنا الزجاجي عالي الجوده في كلا من مدينتي الرياض و جده
+            ومختلف المدن المجاوره وحسب المعايير السعوديه.<br />ونحن لن نتوقف عن
+            العمل لأننا نسعى للابتكار واضافة قدرات جديده. <br />
+            لذا عند اختيار شريك يمكنه تنفيذ متطلبات الزجاج بمختلف انواعه وكذلك
+            جميع اعمال الألمونيوم من ابواب وشبابيك واعمال الأستبل المتنوعه من
+            درابزينات وغيرها من الأشغال الأكثر دقه وعالية التقنيه لمشروعك ,
+            يمكنك الاعتماد على شركة <b>الصقر العربي للزجاج</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container mt-5">
-        <!-- Centered Explore Section -->
+      <div class="d-flex justify-content-between gap-3">
+        <div class="card w-50 me-3">
+          <div class="card-body">
+            <h5 class="card-title">موقعنا في الرياض</h5>
+            <div style="height: 300px; width: 100%">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.391832569056!2d46.6752958!3d24.7135514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02f4e2df43e7%3A0x56c8b29b87d8b890!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1635742491330!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-50 ms-3">
+          <div class="card-body">
+            <h5 class="card-title">موقعنا في جدة</h5>
+            <div style="height: 300px; width: 100%">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.3443261640577!2d39.1628225!3d21.4858119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3c5829b83f8d7%3A0x53a567cb6e073fea!2sJeddah%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1635742596445!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- <div class="container mt-5">
+        
         <div class="explore-section">
             <h1>اكتشف</h1>
             <h2>الرياض &nbsp; | &nbsp; جدة</h2>
         </div>
 
         <div class="row mt-4">
-            <!-- Riyadh Section -->
+            Riyadh Section
             <div class="col-md-6">
                 <div class="city-card">
                     <a href="Riyadh.html" target="_blank" class="links">
@@ -126,7 +261,7 @@
                 </div>
             </div>
 
-            <!-- Jeddah Section -->
+            Jeddah Section
             <div class="col-md-6">
                 <div class="city-card">
                     <a href="Jeddah.html" target="_blank" class="links">
@@ -136,28 +271,68 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <script>
-        // JavaScript to handle navbar hide/show on scroll
-        let lastScrollTop = 0;
-        const navbar = document.getElementById('navbar');
-        
-        window.addEventListener('scroll', function() {
-            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    <!-- Footer  -->
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-4 mt-5">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-2"></i>مصنع الصقر العربي
+            </h6>
+            <p>
+              مصنع الصقر العربي للزجاج هو منشأة متخصصة في تصنيع وتوريد الزجاج في
+              المملكة العربية السعودية. نهدف إلى تقديم منتجات زجاجية عالية
+              الجودة تتوافق مع أحدث المعايير العالمية.
+            </p>
+          </div>
 
-            if (currentScroll > lastScrollTop) {
-                // Scroll down
-                navbar.classList.add('navbar-hidden');
-            } else {
-                // Scroll up
-                navbar.classList.remove('navbar-hidden');
-            }
+          <div class="col-md-4 mb-4 mt-5">
+            <h6 class="text-uppercase fw-bold mb-4">للتواصل</h6>
+            <p>
+              <b>جدة</b><br />
+              <i class="fas fa-phone me-2"></i>0544623373<br />
+              <i class="fas fa-phone me-2"></i>0506989780
+            </p>
+            <p>
+              <b>الرياض</b><br />
+              <i class="fas fa-phone me-2"></i>0546090645<br />
+              <i class="fas fa-phone me-2"></i>0543446702
+            </p>
+          </div>
 
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-        });
-    </script>
+          <div class="col-md-4 mt-5">
+            <h6 class="text-uppercase fw-bold mb-4">تابعنا</h6>
+            <div class="d-flex flex-column">
+              <a href="#" class="text-light mb-2" title="Facebook">
+                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998"></i>
+              </a>
+              <a href="#" class="text-light mb-2" title="Twitter">
+                <i class="fab fa-twitter fa-lg" style="color: #55acee"></i>
+              </a>
+              <a href="#" class="text-light mb-2" title="Instagram">
+                <i class="fab fa-instagram fa-lg" style="color: #ac2bac"></i>
+              </a>
+              <a href="#" class="text-light" title="WhatsApp">
+                <i class="fab fa-whatsapp fa-lg" style="color: #25d366"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center pt-3">
+          <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.3)" />
+          <p class="mb-0">جميع الحقوق محفوظه مصنع الصقر العربي © 2024</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
