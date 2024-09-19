@@ -49,6 +49,72 @@ body {
   /* color: rgb(0, 0, 0); */
 }
 
+/* .navbar-brand {
+  font-size: 1.25rem;
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 20px; /* Smaller font size on small screens */
+    margin-top: 5px;
+  }
+}
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #11b9d2; /* خلفية navbar */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row; /* قائمة الروابط أفقياً */
+}
+
+.navbar-toggler {
+  border: none; /* إزالة الحدود حول زر التبديل */
+}
+
+/* Styles for Navbar Collapse */
+.navbar-collapse {
+  position: relative; /* جعل التوسع/الانهيار يتحكم في موقعه */
+}
+
+.navbar-collapse.collapsing {
+  overflow: hidden;
+}
+
+.navbar-collapse.show {
+  background-color: #11b9d2; /* خلفية عند التوسع */
+}
+
+/* Styles for Navbar Brand */
+.navbar-brand {
+  font-size: 1.25rem; 
+}
+
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem; 
+  }
+
+  .navbar-nav {
+    flex-direction: column; 
+  }
+
+  .navbar-collapse {
+    background-color: #11b9d2;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar-toggler {
+    background-color: #11b9d2; 
+    border: none;
+  }
+}
+
+
+
 
 .btn-custom {
   background-color: #ff9800;
@@ -115,6 +181,57 @@ body {
   font-size: 16px;
   color: #6c757d;
 } */
+ /* General Styles */
+.last-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  padding: 0 15px;
+}
+
+.custom-card {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.custom-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.custom-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 15px;
+  }
+
+  .custom-card h2 {
+    font-size: 20px;
+  }
+
+  .custom-card p {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 
 /* ---------------------------------------------------------- */
 
