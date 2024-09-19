@@ -1,3 +1,6 @@
+:root{
+  --main-col: #4F9CB6;
+}
 body {
   font-family: "Tajawal", sans-serif;
   /* background-color: #f5f5dc; */
@@ -77,3 +80,66 @@ body {
   color: #6c757d;
 } */
 
+/* ---------------------------------------------------------- */
+
+/* Jaddah page style */
+.container .info h2{
+  color: var(--main-col);
+}
+.en{
+  direction: ltr;
+  text-align: left;
+}
+.comp{
+  background-color: var(--main-col);
+  font-size: 45px;
+  width: 50%;
+  transition: 0.2s;
+}
+.comp:before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  background-color: var(--main-col);
+  top: 0px;
+  left: -30px;
+  transform: skewX(-30deg);
+  transition: .3s;
+}
+.comp:hover{
+  width: 100%;
+  text-align: center;
+}
+.comp:hover::before{
+  left: 40px;
+}
+.container h2{
+  color: var(--main-col);
+  font-weight: bolder;
+  font-size: 30px;
+}
+.firstg .container .cats{
+  color: #4f9cb6;
+}
+.secondg{
+  background-color: #f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.fourthg{
+  background-color: #f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.clading .firstc ul li{
+  color: var(--main-col);
+  font-weight: 600;
+}
+.clading,
+.cutters,
+.machines{
+  display: none;
+}
+
+/* ------------------------------------------------------------- */
