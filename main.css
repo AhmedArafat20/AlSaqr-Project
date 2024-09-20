@@ -55,28 +55,28 @@ body {
 /* Media Queries for Smaller Screens */
 @media (max-width: 576px) {
   .navbar-brand {
-    font-size: 20px; /* Smaller font size on small screens */
+    font-size: 20px; 
     margin-top: 5px;
   }
 }
 
 /* General Navbar Styles */
 .navbar {
-  background-color: #11b9d2; /* خلفية navbar */
+  background-color: #11b9d2; 
 }
 
 .navbar-nav {
   display: flex;
-  flex-direction: row; /* قائمة الروابط أفقياً */
+  flex-direction: row; 
 }
 
 .navbar-toggler {
-  border: none; /* إزالة الحدود حول زر التبديل */
+  border: none; 
 }
 
 /* Styles for Navbar Collapse */
 .navbar-collapse {
-  position: relative; /* جعل التوسع/الانهيار يتحكم في موقعه */
+  position: relative; 
 }
 
 .navbar-collapse.collapsing {
@@ -84,7 +84,7 @@ body {
 }
 
 .navbar-collapse.show {
-  background-color: #11b9d2; /* خلفية عند التوسع */
+  background-color: #11b9d2; 
 }
 
 /* Styles for Navbar Brand */
@@ -104,7 +104,8 @@ body {
 
   .navbar-collapse {
     background-color: #11b9d2;
-    border-top: 1px solid #ddd;
+    margin-top: 8px;
+    border-top: 1px solid #ffffff;
   }
 
   .navbar-toggler {
@@ -225,7 +226,7 @@ body {
   .custom-card p {
     font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 15;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -267,6 +268,9 @@ body {
 .comp:hover::before{
   left: 40px;
 }
+ol{
+  line-height: 2;
+}
 .container h2{
   color: var(--main-col);
   font-weight: bolder;
@@ -294,5 +298,31 @@ body {
 .machines{
   display: none;
 }
-
+/* .choose{
+  direction: ltr;
+} */ 
+.choose div{
+  background-color: var(--main-col);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.choose div:hover{
+  background-color: #95c6cd;
+}
+.cutters .secondcc{
+  background-color: #f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+} 
+.machines .content div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.machines div img{
+  max-width: 100%;
+}
 /* ------------------------------------------------------------- */
