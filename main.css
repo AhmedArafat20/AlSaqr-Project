@@ -335,3 +335,31 @@ ol{
   }
 }
 /* ------------------------------------------------------------- */
+
+/* start footer */
+footer h4{
+  color: var(--main-col);
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  color: var(--main-col);
+}
+footer .icon a{
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: 0.3s;
+}
+footer .icon a:hover{
+  background-color: #007bff;
+}
+/* end footer */
