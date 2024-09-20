@@ -1,6 +1,9 @@
 :root{
   --main-col: #4F9CB6;
 }
+*{
+  text-transform: capitalize;
+}
 body {
   font-family: "Tajawal", sans-serif;
   /* background-color: #f5f5dc; */
