@@ -6,103 +6,121 @@
     <title>الصقر - فرع جدة</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <style>
-        .map-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            margin-top: 20px;
-        }
-        iframe {
-            border: 0;
-            width: 100%;
-            height: 100%;
-        }
-        </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+    iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
 </head>
 <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">مصنع شركة الصقر العربي</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              فروعنا
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Riyadh.html">الرياض</a></li>
+              <li><a class="dropdown-item" href="Jeddah.html">جدة</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html">مشاريعنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<!-- start Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="Home.html">الصقر</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Home.html">الصفحة الرئيسية</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            فروعنا
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Riyadh.html"> الرياض</a></li>
-                            <li><a class="dropdown-item" href="Jeddah.html"> جدة</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">عن الصقر</a>
-                    </li>
-                </ul>
+  <div class="container mt-5">
+    <h1 class="text-center">فرع جده</h1>
+    <div class="info">
+        <div class="first mb-5">
+            <h2 class="mb-2">
+                رؤيتنا :
+            </h2>
+            <p>
+                أن نكون رواد في انتشار خدمات الزجاج والمرايا والألمنيوم في السوق السعودي
+            </p>
+            <div class="en mt-4">
+                <!-- <h2 class="mb-2">our vision</h2> -->
+                <p>
+                    <!-- To be the market leader for distribution at all KSA & Gulf Are Markets for High Quality products, High Quality services -->
+                </p>
             </div>
         </div>
-    </nav>
-
-<!-- end the Navbar -->
-
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
-
-<!-- start info -->
-    <div class="container mt-5">
-        <h1 class="text-center">فرع جدة</h1>
-        <div class="info">
-            <div class="first mb-5">
-                <h2 class="mb-2">
-                    رؤيتنا :
-                </h2>
+        <div class="second mb-5">
+            <h2 class="mb-2">
+                هدفنا :
+            </h2>
+            <p>
+                كسب ثقة العملاء، و زيادة معدل رضاهم، في علاقة طويلة الأجل، كشركاء في العمل، وشركاء في النجاح
+            </p>
+            <div class="en mt-4">
+                <!-- <h2 class="mb-2">Our Goal</h2> -->
                 <p>
-                    أن نكون رواد في انتشار خدمات الزجاج والمرايا والألمنيوم في السوق السعودي
+                    <!-- Acquisition the Customer's Credibility, Increase the customer satisfaction for long term relationship as partners in work success -->
                 </p>
-                <div class="en mt-4">
-                    <h2 class="mb-2">our vision</h2>
-                    <p>
-                        To be the market leader for distribution at all KSA & Gulf Are Markets for High Quality products, High Quality services
-                    </p>
-                </div>
             </div>
-            <div class="second mb-5">
-                <h2 class="mb-2">
-                    هدفنا :
-                </h2>
+        </div>
+        <div class="third mb-5">
+            <h2 class="mb-2">
+                رسالتنا :
+            </h2>
+            <p>
+                تقديم منتج عالي الجودة يلبي احتياجات الفنيين والعملاء بجودة وسعر منافس وتقديم الجديد والمطور في السوق
+            </p>
+            <div class="en mt-4">
+                <!-- <h2 class="mb-2">Our Mission</h2> -->
                 <p>
-                    كسب ثقة العملاء، و زيادة معدل رضاهم، في علاقة طويلة الأجل، كشركاء في العمل، وشركاء في النجاح
+                    <!-- Provide the high Quality products, which it be Matching with Needs for customers & Technicians with competitive Quality & competitive price & Submit the Updating for This industry -->
                 </p>
-                <div class="en mt-4">
-                    <h2 class="mb-2">Our Goal</h2>
-                    <p>
-                        Acquisition the Customer's Credibility, Increase the customer satisfaction for long term relationship as partners in work success
-                    </p>
-                </div>
-            </div>
-            <div class="third mb-5">
-                <h2 class="mb-2">
-                    رسالتنا :
-                </h2>
-                <p>
-                    تقديم منتج عالي الجودة يلبي احتياجات الفنيين والعملاء بجودة وسعر منافس وتقديم الجديد والمطور في السوق
-                </p>
-                <div class="en mt-4">
-                    <h2 class="mb-2">Our Mission</h2>
-                    <p>
-                        Provide the high Quality products, which it be Matching with Needs for customers & Technicians with competitive Quality & competitive price & Submit the Updating for This industry
-                    </p>
-                </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <!-- end the info -->
     <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -186,75 +204,160 @@
             <div class="container">
                 <h2>الحف والتلميع:</h2>
             <p>هي عملية تستخدم لحف أو جلخ وتلميع حواف الزجاج من جميع الجهات.</p>
+=======
+</div>
+<hr>
+<!-- end the info -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="choose d-flex align-items-center justify-content-center gap-2">
+    <div onclick="glShow()" class="first">الزجاج</div>
+    <div onclick="clShow()" class="second" >كلادينج</div>
+    <div onclick="cutShow()" class="third" >كاترز</div>
+    <div onclick="mcShow()" class="fourth" >الألات</div>
+</div>
+
+<!-- start glasses -->
+<div class="glass" id="glass">
+    <h1 class="text-center">الزجاج </h1>
+    <!-- <div class="comp fw-bold p-3 text-white position-relative ">الزجاج</div> -->
+    <div class="firstg mt-4 mb-4">
+        <div class="container">
+            <h2>الزجاج العازل (الدبل جلاس):</h2>
+            <p>
+                لزجاج العازل (الدبل جلاس): هو عبارة عن طبقتين أو أكثر من الزجاج بينهما منطقة فارغة مغلقة بإحكام بمادة السبيسر ويتم إلصاق الطبقتين بواسطة مادة البوتيل  تحت تأثير الحرارة والضغط ويكون هذا النوع من الزجاج عازل للصوت والحرارة
+            </p>
+            <p class="mb-1 cats">وتنقسم الزجاج العازل إلى عدة أقسام وهي :</p>
+            <ol>
+                <li>الدبل جلاس العادي.</li>
+                <li>الدبل جلاس إسترنشنر.</li>
+                <li>الدبل جلاس شوكو.</li>
+            </ol>
+>>>>>>> 8218ba4262db048d7c9ef61a1389cb91cfb3d8f9
             <div class="en">
-                <h2>Edging and polish:</h2>
-                <p>It’s a process where the glass is being rustled and polished from all sides.</p>
-            </div>
+                <h2>
+                    <!-- Isolating Glass (Double Glass): -->
+                </h2>
+                <p>
+                    <!-- The Isolated Glass consists of two layers of glass and within those layers there is a vacant space that closed carefully with spacer material by using both heat and compression we use the (Butyl), the two layers of glass are gathered by using Butyl material to get (heat & sound) isolated glass. -->
+                </p>
+                <!-- <p>The isolated glass has many types such as:</p> -->
+                <ol>
+                    <!-- <li>Normal Double Glass</li>
+                    <li>Structure Double Glass</li>
+                    <li>Shoko Double Glass</li> -->
+                </ol>
             </div>
         </div>
     </div>
+    <div class="secondg mt-4 mb-4">
+        <div class="container">
+            <h2>الشطف:</h2>
+            <p>
+                وهي عملية حَف وتلميع الزجاج بدرجات متفاوته تصل إلى <span class="text-primary">45</span> درجة و غالباً يستخدم الشطف في ألواح المرايا ليضيف عليها جمالاً ومنظراً جذاباً.
+            </p>
+            <div class="en">
+                <!-- <h2>Grinding Processes:</h2> -->
+                <p>
+                    <!-- It's the processes where we grind and polish the glass with variable degrees up to 45 degrees. We often use the grinding process to ensure that the Mirror sheets a beautiful and attractive look. -->
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="thirdg mt-4 mb-4">
+        <div class="container">
+            <h2>الواجهات الزجاجية الفريملس:</h2>
+            <ol class="m-0 pe-3">
+                <li>وهي عبارة عن واجهات يتم تركيبها بزجاج 12 ملم شفاف أو ملون حسب اختيار العميل.</li>
+                <li>يتم التركيب على إطار من الستانلس على شكل حرف U</li>
+                <li>طار الستانلس ستيل نوع مرايا غير قابل للصدأ مع سيليكون ووكر الماني</li>
+                <li>يتم التركيب بنظام القطات أو نظام الاسبيدر وذلك لمتانه الزجاج .</li>
+            </ol>
+            <div class="en mt-3">
+                <!-- <h2>Glass Facades (Frameless):</h2> -->
+                <ol>
+                    <!-- <li>These are 12mm glass facades which can be installed as transparent or colored glass as chosen by the customer.</li>
+                    <li>To be installed on an a frame of stainless steel (U).</li>
+                    <li>Stainless Steel Frame from Mirrors with walker German Silicon.</li>
+                    <li>We install it by using parts (Catat) or spider method, which increase the durability of the glass.</li> -->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="fourthg mt-4 mb-4">
+        <div class="container">
+            <h2>الحف والتلميع:</h2>
+        <p>هي عملية تستخدم لحف أو جلخ وتلميع حواف الزجاج من جميع الجهات.</p>
+        <div class="en">
+            <!-- <h2>Edging and polish:</h2>
+            <p>It’s a process where the glass is being rustled and polished from all sides.</p> -->
+        </div>
+        </div>
+    </div>
+</div>
 
 <!-- end the glasses -->
 
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- start clading -->
-    <div class="clading" id="clading">
-        <div class="comp fw-bold p-3 text-white position-relative">الالمنيوم</div>
-        <div class="firstc mb-4 mt-4">
-            <div class="container">
-                <h2>قطاع تكسية الألمنيوم والكلادنج:</h2>
+<div class="clading" id="clading">
+    <h1 class="text-center">الألمونيوم</h1>
+    <!-- <div class="comp fw-bold p-3 text-white position-relative">الالمنيوم</div> -->
+    <div class="firstc mb-4 mt-4">
+        <div class="container">
+            <h2>قطاع تكسية الألمنيوم والكلادنج:</h2>
+            <ol>
+                <li>وهي عبارة عن ألواح من الألمنيوم سماكة 4 مم تتكون من طبقتين من الألمنيوم كل طبقة 0.40 مم مدهونة بطلاء بولي فينيل بينها طبقة من البولي إثيلين النقي للعزل.</li>
+                <li>يتم تركيب حسب المقاسات بالمبنى على تيوبات حديدية مدهونة بطلاء مقاوم للصدأ.</li>
+                <li>يتم تعبئة وإحكام الفراغات بالفوم والسيليكون لمنع دخول الماء والغبار.</li>
+                <li>تتميز الألواح بأنها مقاومة للصدمات والعوامل الجوية.</li>
+                <li>الألواح مطلية بطلاء لحمايتها من الخدوش أثناء العمل ويتم فكها بعد الانتهاء من العمل.</li>
+            </ol>
+            <div class="en">
+                <!-- <h2>Aluminum Cladding Sector:</h2> -->
                 <ol>
-                    <li>وهي عبارة عن ألواح من الألمنيوم سماكة 4 مم تتكون من طبقتين من الألمنيوم كل طبقة 0.40 مم مدهونة بطلاء بولي فينيل بينها طبقة من البولي إثيلين النقي للعزل.</li>
-                    <li>يتم تركيب حسب المقاسات بالمبنى على تيوبات حديدية مدهونة بطلاء مقاوم للصدأ.</li>
-                    <li>يتم تعبئة وإحكام الفراغات بالفوم والسيليكون لمنع دخول الماء والغبار.</li>
-                    <li>تتميز الألواح بأنها مقاومة للصدمات والعوامل الجوية.</li>
-                    <li>الألواح مطلية بطلاء لحمايتها من الخدوش أثناء العمل ويتم فكها بعد الانتهاء من العمل.</li>
+                    <!-- <li>It is an aluminum sheet with a thickness of 4 mm consisting of two layers of aluminum, each layer 0.40 mm painted with Polyvinyl paint with a layer of pure polyethylene between them for insulation.</li>
+                    <li>We install it according to the dimensions of the building, on iron tubing with Astainless fire paint.</li>
+                    <li>Fill and seal the voids with foam and silicon to prevent water and dust.</li>
+                    <li>The sheets are resistant to shocks and weather factors.</li>
+                    <li>The sheets are coated with plastic to protect them from scratches during work and we remove it upon finishing the installment.</li> -->
                 </ol>
-                <div class="en">
-                    <h2>Aluminum Cladding Sector:</h2>
-                    <ol>
-                        <li>It is an aluminum sheet with a thickness of 4 mm consisting of two layers of aluminum, each layer 0.40 mm painted with Polyvinyl paint with a layer of pure polyethylene between them for insulation.</li>
-                        <li>We install it according to the dimensions of the building, on iron tubing with Astainless fire paint.</li>
-                        <li>Fill and seal the voids with foam and silicon to prevent water and dust.</li>
-                        <li>The sheets are resistant to shocks and weather factors.</li>
-                        <li>The sheets are coated with plastic to protect them from scratches during work and we remove it upon finishing the installment.</li>
-                    </ol>
-                </div>
-                <ul class="mt-5">
-                    <li class="fs-1">
-                        حجم الشيت:
-                        <p class="fs-6 text-dark fw-normal">العرض 1.24م - الطول 5.80م - سماكة الألمنيوم الأمامي 43 ملم والخلفي 4 ملم</p>
-                    </li>
-                    <li class="en fs-1">
-                        Standard Size:
-                        <p class="fs-6 text-dark fw-normal">Width 1.24m, length 5.80m, thickness Aluminum uppur coil 0.43mm - Bottom coil 0.40mm.</p>
-                    </li>
-                    <li class="fs-1">
-                        مجالاته واستخداماته:
-                        <p class="fs-6 text-dark fw-normal">الحوائط والديكورات الداخلية، المطارات، الأرصفة، محطات البترول، المستشفيات، المطاعم، الفنادق والنقل والمحال ذات الواجهة الكبيرة، وأكشاك الطرق، والكوفي شوب، والمطابخ.</p>
-                    </li>
-                    <li class="en fs-1">
-                        Application Field:
-                        <p class="fs-6 text-dark fw-normal">all and interior decoration / of airfields, docks, Petroleum Stations, Hotels, Hospitals, Restaurants, recreation Places, top grade residence, villas, offices, Big Billboards, shop windows, roadsides kiosks, Internal walls, Ceiling, compartments, Kitchen, Toilet and Shop Decoration, interior layers, storied cabinet, Renovation and reconstruction for old buildings, Cleaning and dust control project.</p>
-                    </li>
-                    <li class="fs-1">
-                        الألوان المتوفرة
-                        <p class="fs-6 text-dark fw-normal">٥٥ لون ويمكن توفير اي لون أو كمية حسب طلب العميل والوقت المطلوب فيه التنفيذ</p>
-                    </li>
-                    <li class="en fs-1">
-                        Usual Colors
-                        <p class="fs-6 text-dark fw-normal">55 Colors, Other size and colors as per Customer's option can save it, according to Quantities, mentioned time.</p>
-                    </li>
-                </ul>
             </div>
+            <ul class="mt-5">
+                <li class="fs-1">
+                    حجم الشيت:
+                    <p class="fs-6 text-dark fw-normal">العرض 1.24م - الطول 5.80م - سماكة الألمنيوم الأمامي 43 ملم والخلفي 4 ملم</p>
+                </li>
+                <!-- <li class="en fs-1">
+                    Standard Size:
+                    <p class="fs-6 text-dark fw-normal">Width 1.24m, length 5.80m, thickness Aluminum uppur coil 0.43mm - Bottom coil 0.40mm.</p>
+                </li> -->
+                <li class="fs-1">
+                    مجالاته واستخداماته:
+                    <p class="fs-6 text-dark fw-normal">الحوائط والديكورات الداخلية، المطارات، الأرصفة، محطات البترول، المستشفيات، المطاعم، الفنادق والنقل والمحال ذات الواجهة الكبيرة، وأكشاك الطرق، والكوفي شوب، والمطابخ.</p>
+                </li>
+                <!-- <li class="en fs-1">
+                    Application Field:
+                    <p class="fs-6 text-dark fw-normal">all and interior decoration / of airfields, docks, Petroleum Stations, Hotels, Hospitals, Restaurants, recreation Places, top grade residence, villas, offices, Big Billboards, shop windows, roadsides kiosks, Internal walls, Ceiling, compartments, Kitchen, Toilet and Shop Decoration, interior layers, storied cabinet, Renovation and reconstruction for old buildings, Cleaning and dust control project.</p>
+                </li> -->
+                <li class="fs-1">
+                    الألوان المتوفرة
+                    <p class="fs-6 text-dark fw-normal">٥٥ لون ويمكن توفير اي لون أو كمية حسب طلب العميل والوقت المطلوب فيه التنفيذ</p>
+                </li>
+                <!-- <li class="en fs-1">
+                    Usual Colors
+                    <p class="fs-6 text-dark fw-normal">55 Colors, Other size and colors as per Customer's option can save it, according to Quantities, mentioned time.</p>
+                </li> -->
+            </ul>
         </div>
     </div>
+</div>
 
 <!-- end clading -->
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- start cutters -->
+<<<<<<< HEAD
     <div class="cutters" id="cutter">
         <div class="comp fw-bold p-3 text-white position-relative">القطاعات</div>
         <div class="firstcc mt-4 mb-4">
@@ -290,11 +393,17 @@
             </div>
         </div>
     </div>
+=======
+<!-- <div class="cutters" id="cutter">
+    <h2 class="text-center">cutters</h2>
+</div> -->
+>>>>>>> 8218ba4262db048d7c9ef61a1389cb91cfb3d8f9
 <!-- end cutters -->
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- start machines -->
+<<<<<<< HEAD
     <div class="machines" id="machines">
         <div class="comp fw-bold p-3 text-white position-relative">الألات</div>
         <div class="content mt-4 mb-4">
@@ -319,24 +428,80 @@
                 </div>
             </div>
         </div>
+=======
+<div class="machines" id="machines">
+    <h2 class="text-center">
+        موقعنا في الرياض
+    </h2>
+</div>
+<div class="container mt-5">
+    <h1 class="text-center">فرع جدة</h1>
+    <!-- Google Maps Embed for Jeddah -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38715308735!2d39.70265147337697!3d21.49387425340896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d2c9b54bd473%3A0x71e37c27c912e25c!2sJeddah!5e0!3m2!1sen!2ssa!4v1694941380120!5m2!1sen!2ssa" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+>>>>>>> 8218ba4262db048d7c9ef61a1389cb91cfb3d8f9
     </div>
-<!-- end machines -->
+</div>
 
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- footer -->
 
-<!-- start the map -->
-    <div class="container">
-        <!-- Google Maps Embed for Jeddah -->
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38715308735!2d39.70265147337697!3d21.49387425340896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d2c9b54bd473%3A0x71e37c27c912e25c!2sJeddah!5e0!3m2!1sen!2ssa!4v1694941380120!5m2!1sen!2ssa" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-4 mt-5">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-2"></i>مصنع الصقر العربي
+              </h6>
+              <p>
+                مصنع الصقر العربي للزجاج هو منشأة متخصصة في تصنيع وتوريد الزجاج في
+                المملكة العربية السعودية. نهدف إلى تقديم منتجات زجاجية عالية
+                الجودة تتوافق مع أحدث المعايير العالمية.
+              </p>
+            </div>
+  
+            <div class="col-md-4 mb-4 mt-5">
+              <h6 class="text-uppercase fw-bold mb-4">للتواصل</h6>
+              <p>
+                <b>جدة</b><br />
+                <i class="fas fa-phone me-2"></i>0544623373<br />
+                <i class="fas fa-phone me-2"></i>0506989780
+              </p>
+              <p>
+                <b>الرياض</b><br />
+                <i class="fas fa-phone me-2"></i>0546090645<br />
+                <i class="fas fa-phone me-2"></i>0543446702
+              </p>
+            </div>
+  
+            <div class="col-md-4 mt-5">
+              <h6 class="text-uppercase fw-bold mb-4">تابعنا</h6>
+              <div class="d-flex flex-column">
+                <a href="#" class="text-light mb-2" title="Facebook">
+                  <i class="fab fa-facebook-f fa-lg" style="color: #3b5998"></i>
+                </a>
+                <a href="#" class="text-light mb-2" title="Twitter">
+                  <i class="fab fa-twitter fa-lg" style="color: #55acee"></i>
+                </a>
+                <a href="#" class="text-light mb-2" title="Instagram">
+                  <i class="fab fa-instagram fa-lg" style="color: #ac2bac"></i>
+                </a>
+                <a href="#" class="text-light" title="WhatsApp">
+                  <i class="fab fa-whatsapp fa-lg" style="color: #25d366"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="text-center pt-3">
+            <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.3)" />
+            <p class="mb-0">جميع الحقوق محفوظه مصنع شركة الصقر العربي © 2024</p>
+          </div>
         </div>
-    </div>
-<!-- end the map -->
+      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+      <!-- End Of Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
