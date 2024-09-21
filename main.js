@@ -16,6 +16,20 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 }); 
 
+document.addEventListener('click', function (event) {
+  var navbarMenu = document.getElementById('navbarNav');
+  var toggler = document.querySelector('.navbar-toggler');
+
+  if (!navbarMenu.contains(event.target) && !toggler.contains(event.target)) {
+    var bsCollapse = new bootstrap.Collapse(navbarMenu, {
+      toggle: false
+    });
+    bsCollapse.hide(); 
+  }
+});
+
+
+
 // ----------------------------------------------------------------------
 // jaddah page js code
 gl = document.getElementById("glass");
