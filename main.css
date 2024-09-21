@@ -307,7 +307,7 @@ footer a:hover{
   color: var(--main-col);
 }
 footer .icon a{
-  background-color: white;
+  /* background-color: white; */
   height: 50px;
   width: 50px;
   padding: 10px;
@@ -320,7 +320,8 @@ footer .icon a{
   transition: 0.3s;
 }
 footer .icon a:hover{
-  background-color: #007bff;
+  /* background-color: #007bff; */
+  transform: scale(1.2);
 }
 /* end footer */
 
