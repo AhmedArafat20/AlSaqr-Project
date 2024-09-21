@@ -322,3 +322,34 @@ footer .icon a:hover{
   background-color: #007bff;
 }
 /* end footer */
+
+/* ----------------------------------------------------------------------- */
+
+/* start intro page */
+.content{
+  opacity: 0;
+  transition: 0.3s;
+  animation-name: e;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.content img{
+  width: 60%;
+  transition: 0.3s;
+  animation-name: eimg;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes e {
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes eimg {
+  100%{
+    width: 100%;
+  }
+}
+/* end intro page */
