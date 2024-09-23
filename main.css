@@ -309,7 +309,24 @@ ol{
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
+.about-section {
+  text-align: center;
+  margin: 50px 0;
+}
 
+.about-section img {
+width: 80%; 
+height: auto;
+transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@media (min-width: 768px) {
+.about-text {
+/* font-weight: bold; */
+margin-top: 10px;
+color: rgb(0, 0, 0);
+}
+}
 
 /* ------------------------------------------------------------- */
 
