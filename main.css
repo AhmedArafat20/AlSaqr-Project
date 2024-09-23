@@ -36,6 +36,10 @@ body {
   color: #d1d1d1;
 
 }
+nav .dropdown-menu{
+  border: none;
+
+}
 .navbar {
   transition: transform 0.3s ease;
 }
@@ -43,6 +47,7 @@ body {
 .navbar-hidden {
   transform: translateY(-100%);
 }
+
 
 .links {
   text-decoration: none;
@@ -278,7 +283,7 @@ ol{
   padding-top: 50px;
   padding-bottom: 50px;
 } 
-.machines .content div{
+.machines .contentj div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,6 +296,36 @@ ol{
     width: 45%;
     font-size: 30px;
   }
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* التعديلات */
+.photos-section {
+  text-align: center;
+  margin: 50px 0;
+}
+.photos-section img {
+  width: 80%; 
+  height: 50;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.about-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.about-section img {
+width: 80%; 
+height: auto;
+transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@media (min-width: 768px) {
+.about-text {
+/* font-weight: bold; */
+margin-top: 10px;
+color: rgb(0, 0, 0);
+}
 }
 
 /* ------------------------------------------------------------- */
@@ -306,7 +341,7 @@ footer a:hover{
   color: var(--main-col);
 }
 footer .icon a{
-  background-color: white;
+  /* background-color: white; */
   height: 50px;
   width: 50px;
   padding: 10px;
@@ -319,7 +354,8 @@ footer .icon a{
   transition: 0.3s;
 }
 footer .icon a:hover{
-  background-color: #007bff;
+  /* background-color: #007bff; */
+  transform: scale(1.2);
 }
 /* end footer */
 
