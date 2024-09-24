@@ -69,7 +69,7 @@ function clickx(){
   if (cntr == 2)
     btn.innerHTML="رؤيه كل المشاريع"
   else if (cntr == 3){
-    btn.setAttribute("href" , "/Projects.html")
+    btn.setAttribute("href" , "Projects.html")
   }
   content[cntr].style.display="block";
   cntr+=1
