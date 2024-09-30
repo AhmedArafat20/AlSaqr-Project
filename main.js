@@ -27,7 +27,6 @@ document.addEventListener('click', function (event) {
 });
 
 
-
 // ----------------------------------------------------------------------
 // jaddah page js code
 gl = document.getElementById("glass");
