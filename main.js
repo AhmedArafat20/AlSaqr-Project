@@ -6,10 +6,8 @@ window.addEventListener("scroll", function () {
     window.pageYOffset || document.documentElement.scrollTop;
 
   if (currentScroll > lastScrollTop) {
-    // Scroll down
     navbar.classList.add("navbar-hidden");
   } else {
-    // Scroll up
     navbar.classList.remove("navbar-hidden");
   }
 
